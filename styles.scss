@@ -19,12 +19,31 @@ header {
     padding: 20px;
 }
 
-footer, a {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: $darkgrey;
+#adv-head {
+    justify-content: space-between;
+    align-items: center;
 }
+
+#adv-head img {
+    height: 30px;
+}
+
+%text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    text-decoration: none;
+}
+
+footer, a {
+    @extend %text;
+    color: $darkgrey;
+    font-size: 0.9rem;
+}
+
+label, p {
+    @extend %text;
+    font-size: 1rem;
+}
+
 
 /* Main */
 main {
@@ -36,9 +55,24 @@ main {
     padding-bottom: 60px;
 }
 
-img {
+main img {
     height: 100px;
     width: auto;
+}
+
+.im-search {
+    height: 100px;
+}
+
+.images {
+    @extend %text;
+    position: relative;
+    top: -24px;
+    text-align: end;
+    padding-right: 10px;
+    margin: 0;
+    color: #4285F4;
+    font-size: 1rem;
 }
 
 form {
