@@ -25,7 +25,7 @@ header {
   height: 30px;
 }
 
-.images, h2, p, label, footer, a {
+.images, p, h3, h2, footer, a {
   font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
   text-decoration: none;
 }
@@ -35,19 +35,21 @@ footer, a {
   font-size: 0.9rem;
 }
 
-label {
-  font-size: 0.8rem;
-  padding-right: 20px;
+h2 {
+  font-size: 1.2rem;
+  color: #de5246;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 3rem;
 }
 
 p {
-  font-size: 1rem;
-}
-
-h2 {
-  font-size: 1.4rem;
-  color: #de5246;
-  font-weight: 500;
+  margin: 0;
+  font-size: 0.8rem;
 }
 
 /* Main */
@@ -93,34 +95,44 @@ form {
   border: 1px solid rgb(236, 236, 236);
 }
 
-#search-button {
-  width: 140px;
-  align-self: center;
+#adv-submit, #search-button {
   text-align: center;
   padding: 0.8rem 1rem;
-  border-radius: 10px;
   border: none;
+  width: 140px;
+}
+
+#search-button {
   background-color: rgb(236, 236, 236);
   color: rgb(65, 65, 65);
+  align-self: center;
+  border-radius: 10px;
+}
+
+#adv-submit {
+  background-color: #4285F4;
+  color: white;
+  justify-self: end;
 }
 
 #adv-search-field {
   height: 90vh;
-}
-
-#adv-search {
   padding: 0 120px 50px 50px;
 }
 
-.search-q {
+#adv-search {
+  display: grid;
+  grid-template-columns: 10rem auto;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.adv-q, .adv-label {
+  height: 1.4rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .adv-q {
-  height: 1.2rem;
-  width: 50%;
   border: 0.8px solid rgb(65, 65, 65);
 }
 
