@@ -95,18 +95,25 @@ form {
   border: 1px solid rgb(236, 236, 236);
 }
 
-#adv-submit, #search-button {
+#adv-submit, #search-button, #lucky-button {
   text-align: center;
   padding: 0.8rem 1rem;
   border: none;
   width: 140px;
 }
 
-#search-button {
+#search-button, #lucky-button {
   background-color: rgb(236, 236, 236);
   color: rgb(65, 65, 65);
   align-self: center;
   border-radius: 10px;
+}
+
+.search-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 #adv-submit {

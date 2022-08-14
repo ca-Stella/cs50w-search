@@ -113,12 +113,19 @@ form {
     width: 140px;
 }
 
-#search-button {
+#search-button, #lucky-button {
     @extend %buttons;
     background-color: $grey;
     color: $darkgrey;
     align-self: center;
     border-radius: 10px;
+}
+
+.search-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 #adv-submit {
@@ -153,13 +160,6 @@ form {
     @extend %adv;
     border: 0.8px solid $darkgrey;
 }
-
-
-
-
-
-
-
 
 /* Footer */
 footer {
