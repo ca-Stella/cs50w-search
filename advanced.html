@@ -9,28 +9,31 @@
             <img src="./img/googlelogo.png" alt="Google">
             <a href="index.html">Google Search</a>
         </header>
-        <form action="https://www.google.com/advanced_search">
-            <p>Find pages with...</p>
-            <div class="search-q">
-                <label for="all-words">all these words:</label>
-                <input type="text" name="q" id="all-words">
-            </div>
-            <div class="search-q">
-                <label for="exact-words">this exact word or phrase:</label>
-                <input type="text" name="q" id="exact-words">
-            </div>
-            <div class="search-q">
-                <label for="any-words">any of these words:</label>
-                <input type="text" name="q" id="any-words">
-            </div>            
-            <div class="search-q">
-                <label for="none-words">none of these words:</label>
-                <input type="text" name="q" id="none-words">
-            </div>
-            <input type="submit" value="Advanced Search">
-        </form>
+        <div id="adv-search-field">
+            <form id="adv-search" action="https://www.google.com/advanced_search">
+                <h2>Advanced Search</h2>
+                <p>Find pages with...</p>
+                <div class="search-q">
+                    <label for="all-words">all these words:</label>
+                    <input type="text" name="q" id="all-words" class="adv-q">
+                </div>
+                <div class="search-q">
+                    <label for="exact-words">this exact word or phrase:</label>
+                    <input type="text" name="q" id="exact-words" class="adv-q">
+                </div>
+                <div class="search-q">
+                    <label for="any-words">any of these words:</label>
+                    <input type="text" name="q" id="any-words" class="adv-q">
+                </div>            
+                <div class="search-q">
+                    <label for="none-words">none of these words:</label>
+                    <input type="text" name="q" id="none-words" class="adv-q">
+                </div>
+                <input type="submit" value="Advanced Search" class="adv-q">
+            </form>
+        </div>
         <footer>
-          Copyright 2022 ©&nbsp;<a href="https://github.com/ca-Stella/cs50w-search">ca-Stella</a>
+            Copyright 2022 ©&nbsp;<a href="https://github.com/ca-Stella/cs50w-search">ca-Stella</a>
         </footer>
     </body>
 </html>

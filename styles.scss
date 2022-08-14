@@ -39,11 +39,23 @@ footer, a {
     font-size: 0.9rem;
 }
 
-label, p {
+label {
+    @extend %text;
+    font-size: 0.8rem;
+    padding-right: 20px;
+}
+
+p {
     @extend %text;
     font-size: 1rem;
 }
 
+h2 {
+    @extend %text;
+    font-size: 1.4rem;
+    color: #de5246;
+    font-weight: 500;
+}
 
 /* Main */
 main {
@@ -98,6 +110,26 @@ form {
     border: none;
     background-color: $grey;
     color: $darkgrey;
+}
+
+#adv-search-field {
+    height: 90vh;
+}
+
+#adv-search {
+    padding: 0 120px 50px 50px;
+}
+
+.search-q {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.adv-q {
+    height: 1.2rem;
+    width: 50%;
+    border: 0.8px solid $darkgrey;
 }
 
 /* Footer */
