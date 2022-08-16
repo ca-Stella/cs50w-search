@@ -5,6 +5,7 @@
 This is a Search page created as part of The CS50's Web Programming with Python and JavaScript course.  
 
 [🔗 Live Demo](https://ca-stella.github.io/cs50w-search/index.html)
+[📹 Youtube demo](https://www.youtube.com/watch?v=5gfoFeNugxg)
 
 ## Outcomes
 - Gained a better understanding of HTML and CSS
